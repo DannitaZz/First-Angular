@@ -1,0 +1,9 @@
+<section class="container">
+  <div class="preview-container" *ngFor="let item of data; let i = index">
+    <div class="preview" [id]="'preview-'+i">
+      <h3>{{item.name}}</h3>
+      <img [src]="url + item.id + '/thumb.jpg'">
+    </div>
+  </div>
+</section>
+
